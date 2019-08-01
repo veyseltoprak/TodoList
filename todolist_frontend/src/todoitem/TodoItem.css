@@ -1,0 +1,39 @@
+  h1 {
+    margin: 20px 0 15px 0;  
+    background: #eff0f1;
+    color: #6c757d;
+  }
+  
+  #main {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background:#f8f9fa;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul>li:hover {
+    background-color: #F5F5F5;
+  }
+  
+  .form-inline .form-control {
+    width: 50%;
+    /* margin-left: 80px; */
+  }
+  
+  .done {
+    color: green;
+    text-decoration: line-through;
+  }
+  
+  .undone {
+    color: black;
+  }
+  
+  .icon {
+    margin: 6px 10px 6px 0;
+  }
+  

@@ -1,0 +1,34 @@
+#spring:
+# security:
+#   user:
+#     name: user
+#     password: password
+# datasource:
+#   url: jdbc:mysql://localhost:3309/todolist-db
+#   username: root
+#   password: password
+# jpa:
+#   show-sql: true
+#   hibernate:
+#     ddl-auto: create-drop
+#   properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3309/todolist-db?useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey
+    username: root
+    password: password
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+app:
+  auth:
+    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    tokenExpirationMsec: 864000000
